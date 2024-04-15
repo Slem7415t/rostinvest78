@@ -1,0 +1,57 @@
+section.home-catalog {
+    padding: 0;
+}
+
+.home-catalog__main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.home-catalog__main-card {
+    display: flex;
+    flex-basis: 50%;
+    height: 400px;
+}
+
+.home-catalog__main-card>a {
+    margin: auto 40px 45px 40px;
+    font-family: "Golos Text", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: var(--colorThree);
+}
+
+.sp-odezhda {
+    background-image: url(/assets/images/category/image\ 50.jpg);
+}
+.sp-obuv {
+    background-image: url(/assets/images/category/image\ 23.jpg);
+}
+.zaschita-ruk {
+    background-image: url(/assets/images/category/image\ 24.jpg);
+}
+.siz{
+    background-image: url(/assets/images/category/image\ 26.jpg);    
+}
+
+@media (max-width: 770px) {
+    .home-catalog__main-card {
+        height: 200px;
+    }
+    .home-catalog__main-card>a {
+        margin: auto 10px 10px 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 355px) {
+    .home-catalog__main-card>a {
+        margin: auto 10px 10px 10px;
+        font-size: 14px;
+    }
+    .home-catalog__main-card {
+        height: 150px;
+    }
+}

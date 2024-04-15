@@ -1,0 +1,233 @@
+header {
+    background-color: var(--colorFour);
+    color: var(--colorThree);
+}
+
+.header-top {
+    border-bottom: 1px solid var(--colorOne);
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top__title>p {
+    font-family: "Golos Text", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.header-top__sity>span {
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.header-top__seach {
+    cursor: pointer;
+    border-left: 1px solid var(--colorOne);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.header-bottom__logo {
+    width: 298px;
+    height: 46px; 
+}
+
+.header-bottom__contact {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom__contact__left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 45px;
+}
+
+.header-bottom__contact__left>a {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorThree);
+    border-radius: 50%;
+}
+
+.header-bottom__right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: end;
+}
+
+.header-bottom__right>span {
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.header-bottom__right>button {
+    font-family: "Golos Text", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    color: var(--colorTwo);
+    border-bottom: 0.5px solid var(--colorTwo);
+}
+
+.header-bottom__nav {
+    flex-grow: 1;
+}
+
+.header-bottom__nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    list-style: none;
+}
+
+.header-bottom__nav>ul>li {
+    display: flex;
+    align-items: center;
+    font-family: "Golos Text", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.header-bottom__nav>ul>li>a {
+    color: var(--colorThree);
+}
+
+.icon-trick {
+    fill: var(--colorTwo);
+    width: 9px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.icon-seach {
+    fill: var(--colorOne);
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+}
+
+.icon-down {
+    stroke: var(--colorThree);
+    fill: transparent;
+    width: 17px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+.icon-btnWA {
+    fill: var(--colorFour);
+    width: 20px;
+    height: 20px;
+}
+
+.icon-btnTG {
+    fill: var(--colorFour);
+    width: 11px;
+    height: 10px;
+    margin-right: 2px;
+}
+
+.icon-btnTel {
+    fill: var(--colorFour);
+    width: 10px;
+    height: 11px;
+}
+
+@media (max-width: 1380px) {
+    .header-bottom__nav>ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .header-bottom__logo {
+        flex-shrink: 0;
+    }
+    .header-bottom__contact {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 825px) {
+    .header-bottom__contact__left {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 770px) {
+    .header-top__title>p {
+        text-align: center;
+        margin: 0 10px;
+    }
+    .header-top__sity {
+        display: flex;
+    }
+    .header-bottom__logo {
+        width: 150px;
+        height: auto;
+    }
+    .header-bottom__contact {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+    .header-bottom__right {
+        align-items: center;
+    }
+    .header-bottom__contact__left {
+        order: 1;
+    }
+}
+
+@media (max-width: 520px) {
+    .header-bottom__right>button,
+    .header-bottom__right>p,
+    .header-bottom__nav>ul>li,
+    .header-top__title>p {
+        font-size: 10px;
+    }
+    .header-bottom__logo {
+        width: 100px;
+    }
+    
+    .icon-seach {
+        width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    }
+}
+
+@media (max-width: 365px) {
+    .header-bottom__logo {
+        width: 80px;
+    }
+    .header-top__sity>span {
+        font-size: 10px;
+    }
+    .header-bottom__nav>ul {
+        margin: 0 5px;
+    }
+}

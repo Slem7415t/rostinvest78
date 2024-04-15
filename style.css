@@ -1,0 +1,155 @@
+@import url(assets/styles/header.css);
+@import url(assets/styles/footer.css);
+@import url(assets/styles/banner.css);
+@import url(assets/styles/home-catalog.css);
+@import url(assets/styles/home-services.css);
+@import url(assets/styles/home-popular-products.css);
+@import url(assets/styles/home-advantages.css);
+@import url(assets/styles/page-catalog.css);
+@import url(assets/styles/breadcrumbs.css);
+@import url(assets/styles/page-catalog-card.css);
+@import url(assets/styles/aside-catalog.css);
+
+@font-face {
+	font-family: "Golos Text", sans-serif;
+    src: url(assets/fonts/static/GolosText-Black.ttf);
+    src: url(assets/fonts/static/GolosText-Bold.ttf);
+    src: url(assets/fonts/static/GolosText-ExtraBold.ttf);
+    src: url(assets/fonts/static/GolosText-Medium.ttf);
+    src: url(assets/fonts/static/GolosText-Regular.ttf);
+    src: url(assets/fonts/static/GolosText-SemiBold.ttf);
+    src: url(assets/fonts/GolosText-VariableFont_wght.ttf);
+}
+
+:root {
+    --colorOne: #838383;
+    --colorTwo: #E8BA00;
+    --colorThree: #FFFFFF;
+    --colorFour: #383838;
+    --colorFive: #000000;
+    --colorSix: #EFEFEF;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.home-category-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 30px 40px;
+}
+
+.home-category-title>h2 {
+    font-family: "Golos Text", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+
+}
+
+.home-category-title>a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+    color: var(--colorFive);
+}
+
+.home-category-icon {
+    width: 32px;
+    height: 32px;
+    background-color: var(--colorSix);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-right.home-slider,
+ .icon-left.home-slider {
+    width: 10px;
+    height: 18px;
+    fill: transparent;
+    stroke: var(--colorFive);
+}
+
+.icon-right {
+    width: 10px;
+    height: 18px;
+    fill: var(--colorSix);
+    stroke: var(--colorFive);
+}
+
+.icon-seach-card {
+    fill: #D3D3D3;
+    width: 34px;
+    height: 34px;
+}
+ 
+@media (max-width: 770px) {
+    .home-category-title>h2 {
+        font-size: 20px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 510px) {
+    .home-catalog__header>a>span:first-child {
+        display: none;
+    }
+}
+
+@media (max-width: 355px) {
+    .home-category-title>h2 {
+        font-size: 16px;
+    }
+    .home-category-title {
+        padding: 10px;
+    }
+}

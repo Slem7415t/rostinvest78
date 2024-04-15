@@ -1,0 +1,17 @@
+nav.breadcrumbs {
+    margin: 15px 0 80px;
+}
+
+nav.breadcrumbs a {
+    font-family: "Golos Text", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--colorOne);
+}
+
+nav.breadcrumbs>ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}

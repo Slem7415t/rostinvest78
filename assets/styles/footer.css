@@ -1,0 +1,186 @@
+footer {
+    background-color: var(--colorFour);
+    color: var(--colorThree);
+}
+
+.footer-top {
+    border-bottom: 1px solid var(--colorOne);
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top__logo {
+    width: 372px;
+    height: 79px; 
+}
+
+.footer-top h2 {
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    margin-bottom: 15px;
+}
+
+.footer-top a {
+    font-family: "Golos Text", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: var(--colorThree);
+}
+
+.footer-top__nav>ul {
+    list-style: none;
+}
+
+.footer-top__nav>ul>li {
+    margin-bottom: 10px;
+}
+
+.footer-top__contacts p {
+    margin-bottom: 10px;
+}
+
+.footer-top__contacts__btn {
+    margin-top: 15px;
+}
+
+.footer-top__contacts__btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-top__contacts__btn>a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorThree);
+    border-radius: 50%;
+}
+
+.footer-top__contacts__btn .icon-btnWA {
+    fill: var(--colorFour);
+    width: 32px;
+    height: 32px;
+}
+
+.footer-top__contacts__btn .icon-btnTG {
+    fill: var(--colorFour);
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+}
+
+.footer-top__contacts__btn .icon-btnTel {
+    fill: var(--colorFour);
+    width: 16px;
+    height: 18px;
+}
+
+.footer-top__about__adress {
+    margin-bottom: 15px;
+}
+
+.footer-top__about__adress>p {
+    text-align: end;
+    margin-bottom: 5px;
+}
+
+.footer-top__about__chart>p {
+    text-align: end;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom>a {
+    margin: 20px 0;
+}
+
+.footer-bottom__left {
+    display: flex;
+    gap: 275px;
+    margin: 30px 0 10px;
+    font-family: "Golos Text", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+}
+
+.footer-bottom__left a {
+    color: var(--colorThree);
+    max-width: 177px;
+}
+
+@media (max-width: 1150px) {
+    .footer-top__logo {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media (max-width: 950px) {
+    .footer-top__nav
+    /* , */
+    /* .footer-top__contacts */
+     {
+        display: none;
+    }
+    .footer-bottom__left {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 748px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;  
+    }
+    .footer-top__about__adress>p,
+    .footer-top__about__chart>p {
+        text-align: center;
+    }
+    .footer-top__contacts__btn {
+        justify-content: center;
+    }
+    .footer-top__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer-top h2,
+    .footer-top__contacts p,
+    .footer-top a,
+    .footer-top__about__adress>p, 
+    .footer-top__about__chart>p,
+    .footer-bottom__left {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-top__contacts__btn {
+        margin: 0;
+    }
+}
+
+@media (max-width: 410px) {
+    .footer-bottom__left {
+        gap: 50px;
+    }
+}

@@ -1,0 +1,216 @@
+.seach-form__reset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.seach-form__reset>label {
+    font-family: "Golos Text", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.seach-form__reset>button {
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--colorOne);
+}
+
+.seach-type__input,
+.seach-filter__input {
+    display: none;
+}
+
+.seach-type__content,
+.seach-filter__content {
+    display: none;
+}
+
+.seach-type__input:checked ~ .seach-type__content,
+.seach-filter__input:checked ~ .seach-filter__content {
+    display: flex;
+}
+
+.seach-type__input:checked ~ .seach-type__triger {
+    font-weight: 600;
+    color: var(--colorFive);
+    margin-bottom: 0;
+}
+
+.seach-type__triger {
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    cursor: pointer;
+    color: var(--colorOne);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.seach-type__content a {
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--colorOne);
+}
+
+.seach-type__content a.activ {
+    color: var(--colorFive);
+}
+
+.seach-type__content ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.seach-type__content li {
+    margin: 15px 0;
+}
+
+.seach-type {
+    margin-bottom: 20px;
+    max-height: 375px;
+    overflow-x: scroll;
+    overflow-x: hidden;
+}
+
+.icon-down-arrow,
+.icon-top-arrow {
+    width: 14px;
+    height: 8px;
+}
+
+.icon-top-arrow {
+    display: none;
+}
+
+.seach-filter__input:checked ~ .seach-filter__triger>.icon-top-arrow {
+    display: inline;
+}
+
+.seach-filter__input:checked ~ .seach-filter__triger>.icon-down-arrow {
+    display: none;
+}
+
+.seach-filter .seach-filter__triger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 20px 0;
+    cursor: pointer;
+    border-top: 1px solid var(--colorSix);
+}
+
+.seach-filter .seach-filter__content {
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.range-filter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+}
+ 
+input[type=range]::-webkit-slider-runnable-track {
+    border-radius: 50%;
+    height: 0;
+    border: transparent;
+    background-color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: var(--colorTwo);
+    border: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    width:16px;
+    height: 16px;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-track {
+    border-radius: 50%;
+    height: 0;
+    border: transparent;
+    background-color: var(--colorTwo);
+}
+
+input[type=range]::-moz-range-thumb {
+    background: transparent;
+    border: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type=range]:target,
+input[type=range]:focus {
+    border: none;
+}
+
+.range-line {
+    position: absolute;
+    background-color: var(--colorSix);
+    height: 1px;
+    width: 100%;
+    top: 7px;
+}
+
+.range-values {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.range-values span {
+    font-family: "Golos Text", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--colorOne);
+}
+
+.seach-filter__content label {
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.seach-filter__content input {
+    margin-right: 10px;
+}
+
+.seach-form__seach {
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: var(--colorOne);
+    padding: 10px;
+    width: 100%;
+    background-color: var(--colorSix);
+    text-align: center;
+    margin-top: 20px;
+}
